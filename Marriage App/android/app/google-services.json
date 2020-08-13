@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "191874261084",
+    "firebase_url": "https://jhatpatshadikaro.firebaseio.com",
+    "project_id": "jhatpatshadikaro",
+    "storage_bucket": "jhatpatshadikaro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191874261084:android:bc482ca55be4f1b8af0699",
+        "android_client_info": {
+          "package_name": "com.example.marriage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191874261084-dsek4c184skm45rebvbc6anpluulobni.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.marriage",
+            "certificate_hash": "d18a01bb06b26c8e47dc5741c5fc26bf539bcfc0"
+          }
+        },
+        {
+          "client_id": "191874261084-ml0ribme8mrh9oh85gsravdormrh85b9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNZqrESPNSfgRJWRN2qAkyX7BPPAosu7I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "191874261084-ml0ribme8mrh9oh85gsravdormrh85b9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
