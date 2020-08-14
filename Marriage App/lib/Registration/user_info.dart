@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:marriage/Navigation/navBar.dart';
+import 'package:marriage/Payment/payment.dart';
 import 'package:marriage/Registration/upload_pictures.dart';
 
 import '../main.dart';
@@ -320,7 +321,34 @@ class _UserInfoPageState extends State<UserInfoPage> {
         "fatherOccupation":fatherOccupation,
         "expressyourself":expressYourself,
       };
-      Navigator.push(context, MaterialPageRoute(builder: (context)=>UploadPictures(map: data,)));
+      // Navigator.push(context, MaterialPageRoute(builder: (context) => UploadPictures(map: data,)));
+      String amount;
+      
+   
+      switch(annualIncomeValue){
+        case "Less than 1 Lakh":
+          amount = "99.0";
+          break;
+        case "1-15 Lakhs":
+          amount = "199.0";
+          break;
+        case "16-30 Lakhs":
+          amount = "299.0";
+          break;
+        case "30-50 Lakhs":
+          amount = "399.0";
+          break;
+        case "Above 50 Lakhs":
+          amount = "499.0";
+          break;
+        default:
+          amount = "0.0";
+          break;
+
+      }
+
+      Navigator.push(context, new MaterialPageRoute(builder: (context) => Payment(amount, data)));
+      // Navigator.push(context, MaterialPageRoute(builder: (context) => UploadPictures(map: data,)));
 
     }
 

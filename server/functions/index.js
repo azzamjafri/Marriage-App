@@ -13,10 +13,10 @@ var PaytmConfig = {
     website: "WEBSTAGING"
 };
 
-// var txn_url = "https://securegw-stage.paytm.in/order/process"; // for staging
-var txn_url = "http://stage.paytm.in/order/process"; // for staging
+var txn_url = "https://securegw-stage.paytm.in/order/process"; // for staging
+// var txn_url = "http://stage.paytm.in/order/process"; // for staging
 
-var callbackURL = "http://localhost:5000/jhatpatshadikaro/us-central1/customFunctions/paymentReceipt";
+var callbackURL = "http://10.0.2.2:5000/jhatpatshadikaro/us-central1/customFunctions/paymentReceipt";
 
 //CORS ACCESS CONTROL
 app.use((req, res, next) => {

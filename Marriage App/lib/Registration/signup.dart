@@ -6,6 +6,9 @@ import 'package:marriage/Registration/user_info.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
+  String email = "";
+  String phone = "";
+
 class SignupPage extends StatefulWidget {
   @override
   _SignupPageState createState() => _SignupPageState();
@@ -14,8 +17,7 @@ class SignupPage extends StatefulWidget {
 class _SignupPageState extends State<SignupPage> {
   final formkey = GlobalKey<FormState>();
   bool valid;
-  String email = "";
-  String phone = "";
+
   String password = "";
   bool loading = false;
   final auth = FirebaseAuth.instance;
@@ -40,7 +42,7 @@ class _SignupPageState extends State<SignupPage> {
       setState(() {
         loading=false;
       });
-      Navigator.push(context, MaterialPageRoute(builder: (context)=>UserInfoPage()));
+      Navigator.push(context, MaterialPageRoute(builder: (context) => UserInfoPage()));
     } on PlatformException catch (error) {
       var message = ' An error occured, please check credentials';
       if (error.message != null) {
